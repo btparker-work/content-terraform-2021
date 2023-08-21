@@ -9,7 +9,7 @@ provider "aws" {
 
 module "vpc" {
   source = "./modules/vpc"
-  #region = var.main_region
+  region = var.main_region
 }
 
 resource "aws_instance" "my-instance" {
